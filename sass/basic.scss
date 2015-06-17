@@ -1,6 +1,68 @@
-$blue : #1875e7;　
+$blue : #1875e8;　
 
 div {
-　color : $blue;
+	　color : $blue;
+	font-size: 15px;
 }
+
+
+
+$side : left;
+.rounded {
+	　border-#{$side}-radius: 5px;
+}
+
+div {
+  hi {
+  	color: red;
+  }
+}
+
+p {
+  border: {
+    color:red;
+    radius: 5px;
+  }
+}
+
+a {
+  &:hover { color: $blue}
+}
+
+// 继承
+.class1 {
+  border: 1px solid #ddd;  
+}
+
+.class {
+  @extend .class1;
+  font-size: 120%;
+}
+
+
+// mixin
+@mixin left {
+  float: left;
+  margin-left: 10px;
+}
+
+div {
+  @include left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
